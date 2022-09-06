@@ -309,7 +309,7 @@ main .images_section {
 
 main .images_section .images_container {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     max-width: var(--horizontal-max-width);
@@ -318,7 +318,7 @@ main .images_section .images_container {
 
 main .images_section .image_container {
     width: 33.33%;
-    padding: 5px;
+    padding: 3px 6px;
 }
 
 main .images_section img {
