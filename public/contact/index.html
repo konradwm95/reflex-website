@@ -9,8 +9,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+    integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+    integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+    crossorigin=""></script>
     <link rel="stylesheet" href="style.css">
-    <script src="scriptjs" defer></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div class="main_container">
@@ -24,32 +30,32 @@
                 <div class="menu_container">
                         <ul class="menu">
                             <li class="menu_item">
-                                <a href="#"><span>Strona główna</span></a>
+                                <a href="../main/index.html"><span>Strona główna</span></a>
                             </li>
                             <li class="menu_item">
-                                <a href="#"><span>Oferta</span></a>
+                                <a href="../offer/index.html"><span>Oferta</span></a>
                             </li>
                             <li class="menu_item">
-                                <a href="#"><span>O nas</span></a>
+                                <a href="../about_us/index.html"><span>O nas</span></a>
                             </li>
                             <li class="menu_item">
-                                <a href="#"><span>Galeria</span></a>
+                                <a href="../gallery/index.html"><span>Galeria</span></a>
                             </li>
                             <li class="menu_item">
-                                <a href="#"><span>Cennik</span></a>
+                                <a href="../prices/index.html"><span>Cennik</span></a>
                             </li>
                             <li class="menu_item">
-                                <a href="#"><span>Informacje</span></a>
+                                <a href="../info/index.html"><span>Informacje</span></a>
                             </li>
                             <li class="menu_item">
-                                <a href="#"><span>Kontakt</span></a>
+                                <a href="../contact/index.html"><span>Kontakt</span></a>
                             </li>
                         </ul>
                 </div>
                 <div class="hamburger_menu">
-                        <div class="container">
-                            <img src="../assets/hamburger_menu_icon.svg" alt="Rozwijane Menu"/>
-                        </div>
+                    <div class="container">
+                        <img src="../assets/hamburger_menu_icon.svg" alt="Rozwijane Menu"/>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -57,12 +63,84 @@
             <section class="main_section label_section">
                 <div class="container">
                     <div class="inner_wrapper">
-                        <p>Oferta</p>
+                        <p>Kontakt</p>
                     </div>
+                </div>
+            </section>
+            <section class="main_section contact_details">
+                <div class="container">
+                    <div class="inner_wrapper">
+                        <div class="container">
+                            <h1 class="invitation">Dzwoń lub napisz do nas!</h1>
+                        <div class="button_container">
+                            <button class="CTA1">
+                                <span>+48 123 456 789</span>
+                            </button>
+                            <button class="CTA2">
+                                <span>mojka6@gmail.com</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="inner_wrapper">
+                        <div class="container">
+                            <h1 class="invitation">Adres:</h1>
+                            <h3>ul. Centralna 1, 43-300 Meszna</h3>
+                            <h3>(przy trasie z Wilkowic do Szczyrku)</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="social_media">
+                    <a href="Fecebook.com">
+                        <div class="icon_container">
+                            <img src="../assets/social_media_icons/facebook.svg" alt="Facebook link">
+                        </div>
+                    </a>
+                    <a href="Fecebook.com">
+                        <div class="icon_container">
+                            <img src="../assets/social_media_icons/facebook.svg" alt="Facebook link">
+                        </div>
+                    </a>
+                </div>
+            </section>
+            <section class="main_section map_section">
+                <div class="container">
+                    <div id="map"></div>
                 </div>
             </section>
         </main>
         <footer class="footer" id="footer">
+            <div class="page_up_button_container">
+                <img src="../assets/up_page_icon.svg" alt="">
+            </div> 
+            <section class="footer_section main_section">  
+                <div class="container">
+                    <div class="inner_wrapper">
+                        <p class="invitation">Zadzwoń teraz!</p>
+                        <div class="button_container">
+                            <button class="CTA1">
+                                <span>+48 123 456 789</span>
+                            </button>
+                            <button class="CTA2">
+                                <span>mojka6@gmail.com</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="social_media">
+                        <a href="Fecebook.com">
+                            <div class="icon_container">
+                                <img src="../assets/social_media_icons/facebook.svg" alt="Facebook link">
+                            </div>
+                        </a>
+                        <a href="Fecebook.com">
+                            <div class="icon_container">
+                                <img src="../assets/social_media_icons/facebook.svg" alt="Facebook link">
+                            </div>
+                        </a>
+                    </div>
+                </div> 
+            </section>
             <section class="footer_section secondary_section">
                 <div class="container">
                     <p>© 2022 reflex.pl | Wszystkie prawa zastrzeżone</p>

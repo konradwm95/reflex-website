@@ -52,6 +52,7 @@ p.invitation {
 
 .CTA1:hover {
     background-color: #ff984f;
+    cursor: pointer;
 }
 
 .CTA2 {
@@ -68,6 +69,7 @@ p.invitation {
 .CTA2:hover {
     background-color: var(--accent-color);
     color: var(--secondary-color);
+    cursor: pointer;
 }
 
 .CTA2:hover > .icon_container img {
