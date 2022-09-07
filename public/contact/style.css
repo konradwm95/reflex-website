@@ -53,6 +53,7 @@ p.invitation {
 
 .CTA1:hover {
     background-color: #ff984f;
+    cursor: pointer;
 }
 
 .CTA2 {
@@ -70,6 +71,7 @@ p.invitation {
 .CTA2:hover {
     background-color: var(--accent-color);
     color: var(--secondary-color);
+    cursor: pointer;
 }
 
 .CTA2:hover > .icon_container img {
@@ -316,7 +318,7 @@ footer .secondary_section .container {
     margin-top: var(--vertical-margin);
 }
 
-.contact_details > *:first-child > .inner_wrapper {
+.contact_details > .container > .inner_wrapper {
     color: var(--secondary-color);
 }
 
@@ -440,5 +442,9 @@ main .map_section .container {
 }
 
 /* Current page media querries start */
+
+@media (max-width: 768px) {
+    
+}
 
 /* Current page media querries end */

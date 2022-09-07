@@ -40,6 +40,7 @@ p.invitation {
 }
 
 .CTA1 {
+    height: 40px;
     font-size: 18px;
     font-weight: medium;
     padding: 4px 12px;
@@ -52,10 +53,12 @@ p.invitation {
 
 .CTA1:hover {
     background-color: #ff984f;
+    cursor: pointer;
 }
 
 .CTA2 {
     font-size: 18px;
+    height: 40px;
     font-weight: medium;
     padding: 4px 12px;
     border-radius: 8px;
@@ -68,6 +71,7 @@ p.invitation {
 .CTA2:hover {
     background-color: var(--accent-color);
     color: var(--secondary-color);
+    cursor: pointer;
 }
 
 .CTA2:hover > .icon_container img {
@@ -276,8 +280,8 @@ footer .social_media {
 }
 
 footer .social_media .icon_container {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     margin-left: 8px;
 }
 
