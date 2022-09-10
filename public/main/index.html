@@ -16,6 +16,7 @@
     integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
     crossorigin=""></script>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2363fc3976.js" crossorigin="anonymous" defer></script>
     <script src="script.js" defer></script>
 </head>
 <body>
@@ -28,7 +29,7 @@
                     </a>
                 </div>
                 <div class="menu_container">
-                        <ul class="menu">
+                        <ul class="menu main_menu">
                             <li class="menu_item">
                                 <a href="../main/index.html"><span>Strona główna</span></a>
                             </li>
@@ -54,9 +55,23 @@
                 </div>
                 <div class="hamburger_menu">
                         <div class="container">
-                            <img src="../assets/hamburger_menu_icon.svg" alt="Rozwijane Menu"/>
+                            <i class="fa-solid fa-bars"></i>
                         </div>
                 </div>
+            </div>
+            <div class="overlay_menu">
+                <div class="close_button">
+                    <i class="fa-regular fa-circle-xmark"></i>
+                </div>
+                <ul>
+                    <li><a href="../main/index.html">Strona główna</a></li>
+                    <li><a href="../offer/index.html">Oferta</a></li>
+                    <li><a href="../about_us/index.html">O nas</a></li>
+                    <li><a href="../gallery/index.html">Galeria</a></li>
+                    <li><a href="../prices/index.html">Cennik</a></li>
+                    <li><a href="../info/index.html">Informacje</a></li>
+                    <li><a href="../contact/index.html">Kontakt</a></li>
+                </ul>
             </div>
         </nav>
         <main class="main">
@@ -66,6 +81,7 @@
                         <div class="inner_wrapper">
                             <p class="invitation">Zadzwoń teraz!</p>
                             <button class="CTA1">
+                                <i class="fa-solid fa-phone"></i>
                                 <span>+48 123 456 789</span>
                             </button>
                         </div>
@@ -74,7 +90,7 @@
                 <div class="address_info">
                     <div class="container">
                         <div class="icon_container">
-                            <img src="../assets/location_icon.svg" alt="">
+                            <i class="fa-solid fa-location-dot"></i>
                         </div>
                         <span>ul. Wyzwolenia 47, 43-365 Wilkowice</span>
                     </div>
@@ -103,63 +119,63 @@
                             <div class="icon_container">
                                 <img src="../assets/feature_icons/icon_1.svg" alt="icon_1.svg">
                             </div>
-                            <p>Feature short description</p>
+                            <p>Dogodna lokalizacja</p>
                         </div>
                     </div>
                     <div class="feature_card">
                         <div class="container">
                             <div class="icon_container">
-                                <img src="../assets/feature_icons/icon_1.svg" alt="icon_1.svg">
+                                <img src="../assets/feature_icons/icon_2.svg" alt="icon_2.svg">
                             </div>
-                            <p>Feature short description</p>
+                            <p>Mozliwość dojazdu MZK</p>
                         </div>
                     </div>
                     <div class="feature_card">
                         <div class="container">
                             <div class="icon_container">
-                                <img src="../assets/feature_icons/icon_1.svg" alt="icon_1.svg">
+                                <img src="../assets/feature_icons/icon_3.svg" alt="icon_3.svg">
                             </div>
-                            <p>Feature short description</p>
+                            <p>Przestronny parking</p>
                         </div>
                     </div>
                     <div class="feature_card">
                         <div class="container">
                             <div class="icon_container">
-                                <img src="../assets/feature_icons/icon_1.svg" alt="icon_1.svg">
+                                <img src="../assets/feature_icons/icon_4.svg" alt="icon_4.svg">
                             </div>
-                            <p>Feature short description</p>
+                            <p>Nowoczesny gabinet</p>
                         </div>
                     </div>
                     <div class="feature_card">
                         <div class="container">
                             <div class="icon_container">
-                                <img src="../assets/feature_icons/icon_1.svg" alt="icon_1.svg">
+                                <img src="../assets/feature_icons/icon_5.svg" alt="icon_5.svg">
                             </div>
-                            <p>Feature short description</p>
+                            <p>Krótki czas badania</p>
                         </div>
                     </div>
                     <div class="feature_card">
                         <div class="container">
                             <div class="icon_container">
-                                <img src="../assets/feature_icons/icon_1.svg" alt="icon_1.svg">
+                                <img src="../assets/feature_icons/icon_6.svg" alt="icon_6.svg">
                             </div>
-                            <p>Feature short description</p>
+                            <p>Miła atmosfera</p>
                         </div>
                     </div>
                     <div class="feature_card">
                         <div class="container">
                             <div class="icon_container">
-                                <img src="../assets/feature_icons/icon_1.svg" alt="icon_1.svg">
+                                <img src="../assets/feature_icons/icon_7.svg" alt="icon_7.svg">
                             </div>
-                            <p>Feature short description</p>
+                            <p>Na miejscu kawa i herbata</p>
                         </div>
                     </div>
                     <div class="feature_card">
                         <div class="container">
                             <div class="icon_container">
-                                <img src="../assets/feature_icons/icon_1.svg" alt="icon_1.svg">
+                                <img src="../assets/feature_icons/icon_8.svg" alt="icon_8.svg">
                             </div>
-                            <p>Feature short description</p>
+                            <p>Pracujemy od 12 do 16</p>
                         </div>
                     </div>
                 </div>
@@ -188,7 +204,7 @@
         </main>
         <footer class="footer" id="footer">
             <div class="page_up_button_container">
-                <img src="../assets/up_page_icon.svg" alt="">
+                <i class="fa-solid fa-arrow-up"></i>
             </div> 
             <section class="footer_section main_section">  
                 <div class="container">
@@ -196,22 +212,24 @@
                         <p class="invitation">Zadzwoń teraz!</p>
                         <div class="button_container">
                             <button class="CTA1">
+                                <i class="fa-solid fa-phone"></i>
                                 <span>+48 123 456 789</span>
                             </button>
                             <button class="CTA2">
+                                <i class="fa-solid fa-envelope"></i>
                                 <span>mojka6@gmail.com</span>
                             </button>
                         </div>
                     </div>
                     <div class="social_media">
-                        <a href="Fecebook.com">
+                        <a href="Instagram.com">
                             <div class="icon_container">
-                                <img src="../assets/social_media_icons/facebook.svg" alt="Facebook link">
+                                <i class="fa-brands fa-square-instagram"></i>
                             </div>
                         </a>
                         <a href="Fecebook.com">
                             <div class="icon_container">
-                                <img src="../assets/social_media_icons/facebook.svg" alt="Facebook link">
+                                <i class="fa-brands fa-square-facebook"></i>
                             </div>
                         </a>
                     </div>

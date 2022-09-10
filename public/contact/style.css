@@ -49,6 +49,7 @@ p.invitation {
     color: var(--secondary-color);
     background-color: var(--accent-color);
     border: none;
+    margin-right: 5px;
 }
 
 .CTA1:hover {
@@ -305,43 +306,22 @@ footer .secondary_section .container {
 
 /* Current Page Elements Start */
 
-.contact_details {
-    padding: 0 var(--horizontal-margin);
-}
-
 .contact_details > .container {
+    padding: var(--vertical-margin) var(--horizontal-margin) 0 var(--horizontal-margin);
     max-width: var(--horizontal-max-width);
-    margin: 0 auto;
-}
-
-.contact_details > .container > * {
-    margin-top: var(--vertical-margin);
-}
-
-.contact_details > .container > .inner_wrapper {
-    color: var(--secondary-color);
+    margin: auto;
 }
 
 .contact_details .inner_wrapper:first-child {
-    display: flex;
-    width: auto;
+    margin-top: 0;
 }
 
-.contact_details .inner_wrapper:first-child > .container {
-    position: relative;
-    padding: 4px 12px 8px 0;
+.contact_details .inner_wrapper {
+    margin-top: var(--vertical-margin);
 }
 
-.contact_details > *:first-child > .inner_wrapper > .container::before {
-    position: absolute;
-    content: "";
-    height: 100%;
-    width: 1000px;
-    top: 0;
-    right: 0;
-    background-color: #484848;
-    z-index: -1;
-    border-radius: 8px;
+.contact_details h1 {
+    margin-bottom: 5px;
 }
 
 .social_media {
@@ -349,14 +329,17 @@ footer .secondary_section .container {
 }
 
 .social_media .icon_container {
-    width: 40px;
-    height: 40px;
-    margin-right: 8px;
+    margin-left: 8px;
 }
 
-.social_media .icon_container img {
-    width: 100%;
-    height: 100%;
+.social_media .icon_container i {
+    font-size: 40px;
+    color: #b8b8b8;
+    transition: 0.2s;
+}
+
+.social_media .icon_container i:hover {
+    color: #ffffff;
 }
 
 main .map_section {
@@ -412,7 +395,7 @@ main .map_section .container {
         --vertical-margin: 40px;
         --horizontal-margin: 50px;
     }
-    h1 {
+    h1, h2, h3 {
         text-align: center;
     }
     main .label_section .container {
@@ -444,7 +427,14 @@ main .map_section .container {
 /* Current page media querries start */
 
 @media (max-width: 768px) {
-    
+    .main_contact_data .button_container {
+        display: flex;
+        justify-content: center;
+    }
+    .contact_details .social_media {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 /* Current page media querries end */

@@ -355,7 +355,7 @@ main .text_section p {
         --vertical-margin: 40px;
         --horizontal-margin: 50px;
     }
-    h1 {
+    h1, h2, h3 {
         text-align: center;
     }
     main .label_section .container {
