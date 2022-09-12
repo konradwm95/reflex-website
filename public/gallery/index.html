@@ -9,8 +9,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../media_querries.css">
+    <script src="https://kit.fontawesome.com/2363fc3976.js" crossorigin="anonymous" defer></script>
     <script src="script.js" defer></script>
+    <script src="../script.js" defer></script>
 </head>
 <body>
     <div class="main_container">
@@ -22,7 +26,7 @@
                     </a>
                 </div>
                 <div class="menu_container">
-                        <ul class="menu">
+                        <ul class="menu main_menu">
                             <li class="menu_item">
                                 <a href="../main/index.html"><span>Strona główna</span></a>
                             </li>
@@ -48,9 +52,23 @@
                 </div>
                 <div class="hamburger_menu">
                         <div class="container">
-                            <img src="../assets/hamburger_menu_icon.svg" alt="Rozwijane Menu"/>
+                            <i class="fa-solid fa-bars"></i>
                         </div>
                 </div>
+            </div>
+            <div class="overlay_menu">
+                <div class="close_button">
+                    <i class="fa-regular fa-circle-xmark"></i>
+                </div>
+                <ul>
+                    <li><a href="../main/index.html">Strona główna</a></li>
+                    <li><a href="../offer/index.html">Oferta</a></li>
+                    <li><a href="../about_us/index.html">O nas</a></li>
+                    <li><a href="../gallery/index.html">Galeria</a></li>
+                    <li><a href="../prices/index.html">Cennik</a></li>
+                    <li><a href="../info/index.html">Informacje</a></li>
+                    <li><a href="../contact/index.html">Kontakt</a></li>
+                </ul>
             </div>
         </nav>
         <main class="main" id="main">
@@ -68,7 +86,7 @@
         </main>
         <footer class="footer" id="footer">
             <div class="page_up_button_container">
-                <img src="../assets/up_page_icon.svg" alt="">
+                <i class="fa-solid fa-arrow-up"></i>
             </div> 
             <section class="footer_section main_section">  
                 <div class="container">
@@ -76,22 +94,24 @@
                         <p class="invitation">Zadzwoń teraz!</p>
                         <div class="button_container">
                             <button class="CTA1">
-                                <span>+48 123 456 789</span>
+                                <i class="fa-solid fa-phone"></i>
+                                <span><a href="tel:123-456-7890">+48 123 456 789</a></span>
                             </button>
                             <button class="CTA2">
-                                <span>mojka6@gmail.com</span>
+                                <i class="fa-solid fa-envelope"></i>
+                                <span><a href = "mailto: example@gmail.com">example@gmail.com</a></span>
                             </button>
                         </div>
                     </div>
                     <div class="social_media">
-                        <a href="Fecebook.com">
+                        <a href="Instagram.com">
                             <div class="icon_container">
-                                <img src="../assets/social_media_icons/facebook.svg" alt="Facebook link">
+                                <i class="fa-brands fa-square-instagram"></i>
                             </div>
                         </a>
                         <a href="Fecebook.com">
                             <div class="icon_container">
-                                <img src="../assets/social_media_icons/facebook.svg" alt="Facebook link">
+                                <i class="fa-brands fa-square-facebook"></i>
                             </div>
                         </a>
                     </div>
