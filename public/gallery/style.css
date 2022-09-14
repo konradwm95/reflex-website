@@ -28,7 +28,7 @@ main .images_section img {
 
 /* Current page media querries start */
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     main .images_section .image_container {
         width: 50%;
     }

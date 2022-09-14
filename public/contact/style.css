@@ -40,10 +40,18 @@
 
 /* Current page media querries start */
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .main_contact_data .button_container {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .main_contact_data h1 {
+        margin-bottom: 10px;
+    }
+    .main_contact_data .CTA1 {
+        margin-bottom: 5px;
     }
     .contact_details .social_media {
         display: flex;

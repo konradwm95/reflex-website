@@ -248,6 +248,15 @@ nav .logo_container {
     height: var(--menu-elements-size);
 }
 
+nav .small_logo_container {
+    display: none;
+    height: 45px;
+}
+
+nav .small_logo_container img {
+    height: 100%;
+}
+
 nav .logo_container img {
     height: 100%;
 }
@@ -265,8 +274,32 @@ nav .hamburger_menu .container {
     margin: 0;
 }
 
+nav .hamburger_menu .menu_item {
+    height: 32px;
+    padding: 0 12px;
+    margin-right: 20px;
+    background-color: var(--accent-color);
+    border-radius: 100px;
+}
+
+nav .hamburger_menu .menu_item:hover {
+    background-color: #ff984f;
+    cursor: pointer;
+}
+
+nav .hamburger_menu a {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+nav .hamburger_menu span {
+    line-height: 32px;
+}
+
 nav .hamburger_menu i {
-    font-size: 30px;
+    font-size: 34px;
     color: var(--primary-color);
     cursor: pointer;
 }
