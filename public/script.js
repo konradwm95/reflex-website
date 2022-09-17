@@ -8,7 +8,19 @@ const shrinkNavOnScroll = () => {
     }
 }
 
-window.onscroll = function() {shrinkNavOnScroll()};
+const FAB = document.querySelector(".FAB");
+const showFABOnScroll = () => {
+    if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
+    FAB.classList.add("visible");
+    } else {
+    FAB.classList.remove("visible");
+    }
+}
+
+window.onscroll = function() {
+    shrinkNavOnScroll();
+    showFABOnScroll();
+};
 
 const goToTop = () => {
     window.scrollTo({top: 0, behavior: 'smooth'});

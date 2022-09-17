@@ -32,6 +32,32 @@ body {
     position: relative;
 }
 
+.FAB {
+    display: none;
+    position: fixed;
+    bottom: -10%;
+    right: 5%;
+    z-index: 1000;
+    transition: 0.5s;
+}
+
+.FAB.visible {
+    bottom: 5%;
+}
+
+.FAB .container {
+    padding: 15px;
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    box-shadow: var(--main_box_shadow);
+    transition: 0.2s;
+}
+
+.FAB i {
+    font-size: 24px;
+    color: white;
+}
+
 main {
     margin-top: var(--nav-height);
     transition: 0.2s;
@@ -42,19 +68,11 @@ main.shrinked {
 }
 
 main .label_section {
-    max-width: var(--horizontal-max-width);
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding-top: var(--vertical-margin);
 }
 
 main .label_section .container {
-    width: 100%;
-    max-width: var(--horizontal-max-width);
     margin: 0 var(--horizontal-margin);
-    display: flex;
-    justify-content: flex-start;
 }
 
 main .label_section .inner_wrapper {
@@ -150,7 +168,7 @@ p.invitation {
 }
 
 .CTA2 i {
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .CTA2:hover {
@@ -227,7 +245,7 @@ nav {
     border-top: 10px solid var(--primary-color);
     border-bottom: 2px solid var(--primary-color);
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
-    z-index: 100;
+    z-index: 1001;
     transition: 0.2s;
 }
 
@@ -278,13 +296,8 @@ nav .hamburger_menu .menu_item {
     height: 32px;
     padding: 0 12px;
     margin-right: 20px;
-    background-color: var(--accent-color);
+    background-color: var(--primary-color);
     border-radius: 100px;
-}
-
-nav .hamburger_menu .menu_item:hover {
-    background-color: #ff984f;
-    cursor: pointer;
 }
 
 nav .hamburger_menu a {

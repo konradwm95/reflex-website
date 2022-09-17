@@ -15,6 +15,9 @@
     :root {
         --horizontal-margin: 80px;
     }
+    .FAB {
+        display: block;
+    }
     main .hero_section {
         height: 50vh;
     }
@@ -70,16 +73,19 @@
     }
 }
 
+@media (max-width: 550px) {
+    nav .logo_container {
+    display: none;
+    }
+    nav .small_logo_container {
+    display: block;
+    }
+}
+
 @media (max-width: 480px) {
     :root {
         --vertical-margin: 25px;
         --horizontal-margin: 20px;
-    }
-    nav .logo_container {
-        display: none;
-    }
-    nav .small_logo_container {
-        display: block;
     }
     main .hero_section {
         background-position: 55%;
