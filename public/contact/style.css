@@ -1,5 +1,10 @@
 /* Current page elements start */
 
+main {
+    background-image: url("../assets/abstract.jpg");
+    backdrop-filter: opacity(0.1);
+}
+
 .contact_details > .container {
     padding: var(--vertical-margin) var(--horizontal-margin) 0 var(--horizontal-margin);
     max-width: var(--horizontal-max-width);

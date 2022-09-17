@@ -41,6 +41,10 @@ body {
     transition: 0.5s;
 }
 
+.FAB:active {
+    transform: scale(1.2);
+}
+
 .FAB.visible {
     bottom: 5%;
 }
@@ -51,6 +55,23 @@ body {
     border-radius: 50%;
     box-shadow: var(--main_box_shadow);
     transition: 0.2s;
+    animation: pulse 30s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes pulse {
+    90% {
+        transform: scale(1);
+        background-color: var(--accent-color);
+    }
+    95% {
+        transform: scale(1.2);
+        background-color:#ff984f;
+    }
+    100% {
+        transform: scale(1);
+        background-color: var(--accent-color);
+    }
 }
 
 .FAB i {
@@ -171,28 +192,27 @@ p.invitation {
     font-size: 18px;
 }
 
-.CTA2:hover {
-    background-color: #ff984f;
-    color: var(--secondary-color);
-    cursor: pointer;
-}
-
-.CTA2:hover > .icon_container img {
-    background-color: var(--secondary-color);
-    border-radius: 10px;
-}
-
-.CTA1 a {
-    text-decoration: none;
-    color: var(--secondary-color);
-}
-
 .CTA2 a {
     text-decoration: none;
     color: var(--accent-color);
 }
 
-.CTA2 a:hover {
+.CTA2:hover {
+    background-color: #ff984f;
+    cursor: pointer;
+    border: 2px solid #ff984f;
+}
+
+.CTA2:hover i {
+    color: var(--secondary-color);
+}
+
+.CTA2:hover a {
+    color: var(--secondary-color);
+}
+
+.CTA1 a {
+    text-decoration: none;
     color: var(--secondary-color);
 }
 
@@ -242,10 +262,10 @@ nav {
     justify-content: center;
     align-items: center;
     background-color: var(--secondary-color);
-    border-top: 10px solid var(--primary-color);
+    border-top: 5px solid var(--primary-color);
     border-bottom: 2px solid var(--primary-color);
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
-    z-index: 1001;
+    z-index: 1000;
     transition: 0.2s;
 }
 

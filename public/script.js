@@ -10,7 +10,7 @@ const shrinkNavOnScroll = () => {
 
 const FAB = document.querySelector(".FAB");
 const showFABOnScroll = () => {
-    if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
+    if (document.body.scrollTop > window.innerHeight || document.documentElement.scrollTop > window.innerHeight) {
     FAB.classList.add("visible");
     } else {
     FAB.classList.remove("visible");

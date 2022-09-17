@@ -12,7 +12,7 @@ main .bio_section .container {
     justify-content: center;
     padding: 30px 0 var(--vertical-margin) 0;
     border-radius: var(--vertical-margin);
-    background-color: rgb(208, 246, 255,);
+    background-color: rgb(222, 249, 255);
     box-shadow: var(--main_box_shadow);
 }
 
