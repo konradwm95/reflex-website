@@ -1,6 +1,6 @@
 /* Media querries start */
 
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
     nav .menu_container {
         display: none;
     }
@@ -8,6 +8,10 @@
     nav .hamburger_menu {
         display: flex;
         align-items: center;
+    }
+
+    nav .logo_container {
+        height: 50px;
     }
 }
 
@@ -18,8 +22,28 @@
     .FAB {
         display: block;
     }
+    .CTA1,
+    .CTA2 {
+        font-size: 18px;
+    }
+
+    .CTA1 i,
+    .CTA2 i {
+        font-size: 18px;
+    }
     main .hero_section {
         height: 50vh;
+    }
+    main .text_section h1 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    main .text_section p {
+        font-size: 18px;
+        line-height: 26px;
+    }
+    p.invitation {
+        font-size: 18px;
     }
 }
 
@@ -71,14 +95,20 @@
     footer .main_section .CTA1 {
         margin-bottom: 5px;
     }
+    .leaflet-popup-content {
+        font-size: 16px;
+    }
+    footer .secondary_section .container {
+        text-align: center;
+    }
+    footer .page_up_button_container i {
+        font-size: 28px;
+    }
 }
 
 @media (max-width: 550px) {
-    nav .logo_container {
-    display: none;
-    }
-    nav .small_logo_container {
-    display: block;
+    nav .hamburger_menu .menu_item {
+        display: none;
     }
 }
 
@@ -87,14 +117,14 @@
         --vertical-margin: 25px;
         --horizontal-margin: 20px;
     }
+    nav .hamburger_menu i {
+        font-size: 30px;
+    }
     main .hero_section {
         background-position: 55%;
     }
     main .feature_section .feature_card {
         width: 50%;
-    }
-    footer .secondary_section {
-        text-align: center;
     }
     footer .CTA1 {
         margin-right: 0;

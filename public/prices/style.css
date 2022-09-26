@@ -19,16 +19,17 @@ table {
     width: 100%;
     border-radius: 8px 8px 0 0;
     overflow: hidden;
-    font-size: 18px;
+    font-size: 24px;
 }
   
 td {
-    padding: 6px 10px;
+    padding: 8px 16px;
 }
 
 th {
-    padding: 8px 10px;
-    font-size: 19px;
+    padding: 12px 16px;
+    font-size: 26px;
+    letter-spacing: 0.07em;
     background-color: var(--primary-color);
     color: var(--secondary-color);
 }
@@ -50,4 +51,6 @@ p:last-child {
 /* Current page elements end */
 
 /* Current page media querries start */
+
+
 /* Current page media querries end */

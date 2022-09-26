@@ -4,5 +4,5 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '© OpenStreetMap'
 }).addTo(map);
 L.marker([49.762, 19.089]).addTo(map)
-.bindPopup("<b>Pracownia Psychologii Transportu</b><br>ul. Wyzwolenia 47, <br>43-365 Wilkowice")
+.bindPopup("<b>Psychologia Transportu</b><br>ul. Wyzwolenia 47, <br>43-365 Wilkowice")
 .openPopup();

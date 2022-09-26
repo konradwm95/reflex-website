@@ -30,7 +30,7 @@ const upButton = document.querySelector(".page_up_button_container");
 upButton.addEventListener("click", goToTop);
 
 const overlayMenu = document.querySelector(".overlay_menu");
-const hamburgerMenu = document.querySelector(".hamburger_menu");
+const hamburgerMenu = document.querySelector(".hamburger_menu > .container");
 hamburgerMenu.addEventListener("click", ()=> {
     overlayMenu.style.transform = "translateX(-100%)";
 })

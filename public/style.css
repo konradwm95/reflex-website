@@ -1,5 +1,7 @@
 /* Reusable Elements Start */
 
+/* poprawić close overlay - touch area size */ 
+
 * {
     margin: 0;
     padding: 0;
@@ -53,7 +55,9 @@ body {
     padding: 15px;
     background-color: var(--accent-color);
     border-radius: 50%;
-    box-shadow: var(--main_box_shadow);
+    -webkit-box-shadow: 2px 4px 12px 0px rgb(0, 0, 0);
+    -moz-box-shadow: 2px 4px 12px 0px rgb(0, 0, 0);
+    box-shadow: 2px 4px 12px 0px rgb(0, 0, 0);
     transition: 0.2s;
     animation: pulse 30s infinite;
     animation-direction: alternate;
@@ -103,7 +107,7 @@ main .label_section .inner_wrapper {
 }
 
 main .label_section p {
-    font-size: 26px;
+    font-size: 32px;
     font-weight: 500;
     color: var(--secondary-color);
 }
@@ -140,25 +144,27 @@ main .text_section .text_block:last-child {
 }
 
 main .text_section h1 {
+    font-size: 32px;
     margin-bottom: 20px;
 }
 
 main .text_section p {
+    font-size: 21px;
     line-height: 30px;
 }
 
 p.invitation {
     width: max-content;
     font-family: 'Poppins', sans-serif;
-    font-size: 18px;
+    font-size: 21px;
     font-weight: 500;
 }
 
 .CTA1 {
-    height: 40px;
-    font-size: 20px;
+    height: 48px;
+    font-size: 24px;
     font-weight: 500;
-    padding: 4px 12px;
+    padding: 0px 20px;
     border-radius: 8px;
     box-shadow: var(--main_box_shadow);
     color: var(--secondary-color);
@@ -168,7 +174,8 @@ p.invitation {
 }
 
 .CTA1 i {
-    font-size: 18px;
+    font-size: 21px;
+    margin-right: 5px;
 }
 
 .CTA1:hover {
@@ -177,10 +184,10 @@ p.invitation {
 }
 
 .CTA2 {
-    font-size: 20px;
-    height: 40px;
+    font-size: 24px;
+    height: 48px;
     font-weight: 500;
-    padding: 4px 12px;
+    padding: 0px 20px;
     border-radius: 8px;
     box-shadow: var(--main_box_shadow);
     color: var(--accent-color);
@@ -283,7 +290,7 @@ nav .container {
 }
 
 nav .logo_container {
-    height: var(--menu-elements-size);
+    height: 65px;
 }
 
 nav .small_logo_container {
@@ -309,19 +316,24 @@ nav .hamburger_menu {
 }
 
 nav .hamburger_menu .container {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    display: flex;
+    justify-content: center;
     margin: 0;
 }
 
 nav .hamburger_menu .menu_item {
     height: 32px;
-    padding: 0 12px;
-    margin-right: 20px;
+    padding: 0px 12px;
+    margin-right: 10px;
     background-color: var(--primary-color);
     border-radius: 100px;
 }
 
 nav .hamburger_menu a {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 500;
     color: var(--secondary-color);
     text-decoration: none;
@@ -366,16 +378,20 @@ nav .overlay_menu .close_button i:hover {
 }
 
 nav .overlay_menu ul {
+    width: max-content;
     list-style: none;
+    margin: auto;
 }
 
 nav .overlay_menu li {
+    width: max-content;
     text-transform: uppercase;
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
-    padding: 8px;
+    padding: 0 16px;
     border-radius: 8px;
     transition: 0.2s;
+    margin: auto;
 }
 
 nav .overlay_menu li:hover {
@@ -393,6 +409,7 @@ nav .overlay_menu li:last-child:hover {
 }
 
 nav .overlay_menu a {
+    line-height: 50px;
     text-decoration: none;
     color: var(--secondary-color);
 }
@@ -421,7 +438,8 @@ nav .menu a {
 }
 
 nav .menu span {
-    font-size: 16px;
+    font-size: 20px;
+    font-weight: 300;
     color: var(--secondary-color);
     line-height: var(--menu-elements-size);
 }
@@ -465,7 +483,7 @@ footer .page_up_button_container {
 
 footer .page_up_button_container i {
     color: rgb(160, 160, 160);
-    font-size: 25px;
+    font-size: 32px;
 }
 
 footer .page_up_button_container:hover {
@@ -506,7 +524,7 @@ footer .social_media .icon_container {
 }
 
 footer .social_media .icon_container i {
-    font-size: 40px;
+    font-size: 50px;
     color: #b8b8b8;
     transition: 0.2s;
 }
@@ -516,16 +534,25 @@ footer .social_media .icon_container i:hover {
 }
 
 footer .secondary_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #181818;
     color: var(--text-color-lighter);
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 300;
-}
-
-footer .secondary_section .container {
     padding: 8px var(--horizontal-margin);
 }
 
+footer .secondary_section .container {
+    width: 100%;
+    max-width: var(--horizontal-max-width);
+}
+
 /* Footer Styles End */
+
+.leaflet-popup-content {
+    font-size: 21px;
+}
 
 /* Reusable Elements End */
