@@ -1,7 +1,7 @@
 /* Current page elements start */
 
 .prices_section {
-    padding: var(--vertical-margin) var(--horizontal-margin);
+    padding: calc(2* var(--vertical-margin)) var(--horizontal-margin);
 }
 
 .prices_section > .container {
@@ -21,10 +21,6 @@ table {
     overflow: hidden;
     font-size: 24px;
 }
-  
-td {
-    padding: 8px 16px;
-}
 
 th {
     padding: 12px 16px;
@@ -38,6 +34,7 @@ td {
     display: flex;
     width: 100%;
     justify-content: space-between;
+    padding: 8px 16px;
 }
 
 td:nth-child(even) {
@@ -52,5 +49,17 @@ p:last-child {
 
 /* Current page media querries start */
 
+@media (max-width: 1024px) {
+    th {
+        font-size: 21px;
+        padding: 8px 16px;
+    }
+    td {
+        padding: 6px 12px;
+    }
+    p {
+        font-size: 21px;
+    }
+}
 
 /* Current page media querries end */

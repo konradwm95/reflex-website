@@ -363,7 +363,10 @@ nav .overlay_menu {
 }
 
 nav .overlay_menu .close_button {
-    padding-bottom: 24px;
+    padding: 10px;
+    margin-bottom: 16px;
+    width: min-content;
+    margin: auto;
 }
 
 nav .overlay_menu .close_button i {

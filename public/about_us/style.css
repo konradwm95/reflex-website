@@ -2,6 +2,7 @@
 
 main .bio_section {
     max-width: var(--horizontal-max-width);
+    font-size: 22px;
     padding: var(--vertical-margin) var(--horizontal-margin) 50px var(--horizontal-margin);
     margin: 0 auto;
 }
@@ -11,8 +12,9 @@ main .bio_section .container {
     flex-direction: column;
     justify-content: center;
     padding: 30px 0 var(--vertical-margin) 0;
+    color: black;
+    border: 1px solid var(--primary-color);
     border-radius: var(--vertical-margin);
-    background-color: rgb(222, 249, 255);
     box-shadow: var(--main_box_shadow);
 }
 
@@ -27,12 +29,12 @@ main .person p {
 }
 
 main .person p:first-child {
-    font-size: 18px;
+    font-size: 24px;
     color: var(--main-text-color);
 }
 
 main .person p:last-child {
-    font-size: 14px;
+    font-size: 20px;
     color: #505050;
 }
 
@@ -42,8 +44,8 @@ main .bio_section .biography {
 }
 
 main .bio_section .image_container {
-    width: 80px;
-    height: 80px;
+    width: 120px;
+    height: 120px;
     background-image: url("../assets/person.jpg");
     background-size: cover;
     background-position: center;
@@ -60,4 +62,21 @@ main .bio_section img {
 /* Current page elements end */
 
 /* Current page media querries start */
+@media (max-width: 1024px) {
+    main .bio_section {
+        font-size: 18px;
+    }
+    main .bio_section .image_container {
+        width: 80px;
+        height: 80px;
+    }
+    main .person p:first-child {
+        font-size: 20px;
+    }
+    
+    main .person p:last-child {
+        font-size: 16px;
+    }
+}
+
 /* Current page media querries end */
