@@ -1,7 +1,5 @@
 /* Reusable Elements Start */
 
-/* poprawić close overlay - touch area size */ 
-
 * {
     margin: 0;
     padding: 0;
@@ -86,6 +84,7 @@ body {
 main {
     margin-top: var(--nav-height);
     transition: 0.2s;
+    margin-bottom: var(--vertical-margin);
 }
 
 main.shrinked {
@@ -143,9 +142,18 @@ main .text_section .text_block:last-child {
     margin-bottom: 0px;
 }
 
-main .text_section h1 {
+h1 {
     font-size: 32px;
     margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+main .text_section li {
+    margin-bottom: 5px;
 }
 
 main .text_section p {
@@ -238,7 +246,7 @@ main .map_section::before {
     top: 100%;
     left:0;
     width: 100%;
-    height: var(--vertical-margin);
+    height: calc(2 * var(--vertical-margin));
     background-color: var(--primary-color);
 }
 
