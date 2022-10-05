@@ -85,6 +85,7 @@ main {
     margin-top: var(--nav-height);
     transition: 0.2s;
     margin-bottom: var(--vertical-margin);
+    min-height: 100vh;
 }
 
 main.shrinked {
@@ -453,6 +454,10 @@ nav .menu span {
     font-weight: 300;
     color: var(--secondary-color);
     line-height: var(--menu-elements-size);
+}
+
+nav .menu li:last-of-type > span {
+    color: var(--primary-color);
 }
 
 /* Navbar style end */
