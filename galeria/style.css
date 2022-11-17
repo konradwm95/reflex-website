@@ -1,0 +1,43 @@
+/* Current page elements start */
+
+main .images_section {
+    display: flex;
+    justify-content: center;
+    margin: var(--vertical-margin) 0;
+}
+
+main .images_section .images_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: var(--horizontal-max-width);
+    margin: 0 var(--horizontal-margin);
+}
+
+main .images_section .image_container {
+    width: 33.33%;
+    padding: 3px 6px;
+}
+
+main .images_section img {
+    width: 100%;
+}
+
+/* Current Page elements end */
+
+/* Current page media querries start */
+
+@media (max-width: 767px) {
+    main .images_section .image_container {
+        width: 50%;
+    }
+}
+
+@media (max-width: 480px) {
+    main .images_section .image_container {
+        width: 100%;
+    }
+}
+
+/* Current page media querries end */
