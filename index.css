@@ -1,0 +1,208 @@
+/* Current page elements start */
+
+main .hero_section {
+    position: relative;
+    height: 75vh;
+    background-image: url("../assets/green_light.jpg");
+    background-size: cover;
+    background-position: 20% 60%;
+}
+
+main .hero_section::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 4, 255, 0.08);
+    z-index: 10;
+}
+
+main .hero_section::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: var(--vertical-margin);
+    background-color: var(--primary-color);
+    z-index: -1;
+}
+
+main .hero_section .call_invitation {
+    position: absolute;
+    width: 100%;
+    max-width: var(--horizontal-max-width);
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0 var(--horizontal-margin);
+    z-index: 100;
+}
+
+main .call_invitation .inner_wrapper {
+    position: absolute;
+    padding: 10px 15px 10px 0;
+}
+
+main .call_invitation p {
+    color: var(--secondary-color);
+}
+
+main .call_invitation .inner_wrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -1000px;
+    right: 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    z-index: -1;
+}
+
+main .hero_section .address_info {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 0 var(--horizontal-margin);
+    border-top: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: var(--vertical-margin) var(--vertical-margin) 0 0;
+    background-color: var(--primary-color);
+    z-index: 100;
+}
+
+.hero_section .address_info > .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.hero_section .address_info i {
+    font-size: 18px;
+    color: var(--secondary-color);
+    margin-right: 10px;
+}
+
+.hero_section .address_info span {
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+    color: var(--secondary-color);
+    line-height: 130%;
+    text-align: center;
+}
+
+main .feature_section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+    border-radius: var(--vertical-margin) var(--vertical-margin) 0 0;
+}
+
+main .feature_section::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: var(--vertical-margin);
+    background-color: var(--primary-color);
+    z-index: -1;
+}
+
+main .feature_section > .container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: calc(var(--horizontal-max-width) - 200px);
+    padding: var(--vertical-margin) var(--horizontal-margin);
+}
+
+main .feature_section .feature_card {
+    width: 25%;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    line-height: 130%;
+    text-align: center;
+    color: var(--secondary-color);
+    padding: var(--vertical-margin) 20px;
+}
+
+main .feature_card > .container {
+    max-width: 130px;
+    margin: auto;
+
+}
+
+main .feature_section .icon_container {
+    width: 55px;
+    height: 55px;
+    margin: 0 auto 10px auto;
+}
+
+main .feature_section img {
+    width: 100%;
+    height: 100%;
+}
+
+main .feature_section p {
+    font-size: 21px;
+    line-height: 24px;
+    text-align: center;
+}
+
+/* Current page elements end */
+
+/* Current page media querries start */
+
+@media (max-width: 1024px) {
+    main .hero_section {
+        height: 50vh;
+    }
+    main .hero_section .call_invitation p {
+        font-size: 18px;
+    }
+    .hero_section .address_info span {
+        font-size: 18px;
+    }
+    main .feature_section .icon_container {
+        width: 45px;
+        height: 45px;
+        margin: 0 auto 10px auto;
+    }
+    main .feature_section p {
+        font-size: 18px;
+        line-height: 21px;
+    }
+}
+
+@media (max-width: 767px) {
+    main .feature_section .feature_card {
+        width: 33%;
+    }
+}
+
+@media (max-width: 550px) {
+    main .feature_section .feature_card {
+        width: 50%;
+    }
+}
+
+@media (max-width: 480px) {
+    main .hero_section {
+        background-position: 55%;
+    }
+    main .feature_section .icon_container {
+        width: 40px;
+        height: 40px;
+        margin: 0 auto 10px auto;
+    }
+}
+
+/* Current page media querries end */
