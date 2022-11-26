@@ -41,3 +41,61 @@ main .images_section img {
 }
 
 /* Current page media querries end */
+
+
+/* Gallery start */
+
+.gallery-navigation {
+  position: fixed;
+  inset: 0 0 0 0;
+  z-index: 1001;
+  flex-direction: column;
+  display: flex;
+
+  align-items: stretch;
+
+  background-color: black;
+  max-height: 50vh;
+}
+
+.gal-top {
+  display: flex;
+  color: white;
+  justify-content: flex-end;
+  font-size: 10em;
+  align-items: center;
+}
+
+.gal-bot {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-view {
+  max-height: 90%;
+  max-width: 90%;
+  height: 100vh;
+  width: 100%;
+  object-fit: contain;
+}
+
+.gal-nav {
+  max-width: 10em;
+  display: flex;
+  align-items: center;
+  padding: 1em;
+  cursor: pointer;
+}
+
+.gal-nav.next svg {
+  transform: rotate(180deg);
+}
+
+.gal-nav svg {
+  fill: white;
+}
+
+/* Gallery end */
